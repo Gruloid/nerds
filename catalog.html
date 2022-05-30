@@ -30,7 +30,128 @@
     </nav>
   </header>
   <main>
-
+    <div>
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+    <section>
+      <h2>Фильтр по каталогу</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <input type="range">
+          <label>от<input type="text" value="0"></label>
+          <label>до<input type="text" value="150 000"></label>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="view-grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="view-grid" value="fix" id="filter-fix">
+              <label for="filter-fix">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="view-grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
+    <section>
+      <div>
+        Сортировать:
+        <button type="button">По цене</button>
+        <button type="button">По типу</button>
+        <button type="button">По названию</button>
+        <button type="button"><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Стрелка"></button>
+      </div>
+      <div>
+        <h2>Список шаблонов</h2>
+        <ul>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет Седона">
+            <h3>Sedona</h3>
+            <p>Информационный сайт<br> для туристов</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет Pink App">
+            <h3>Pink App</h3>
+            <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет Barbershopа">
+            <h3>Barbershop</h3>
+            <p>Сайт салона красоты. <br> Для мужчин, да.</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет MISHKA">
+            <h3>MISHKA</h3>
+            <p>Интернет-магазин <br> вязаных игрушек</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет A Plus">
+            <h3>A Plus</h3>
+            <p>Лендинг курсов повышения <br> квалификации</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+          <li>
+            <img src="https://via.placeholder.com/360x40" width="360" height="40" alt="Браузер">
+            <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Макет КВАСТ">
+            <h3>КВАСТ</h3>
+            <p>Промо-сайт производителя <br> крафтового кваса</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+          <button type="button">Следующая</button>
+        
+      </div>
+    </section>
   </main>
   <footer>
     <section>
