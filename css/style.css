@@ -54,7 +54,7 @@ img{
   line-height: 150%;
   color: var(--text-all);
   background-color: var(--white);
-  
+
 }
 
 .container{
@@ -77,7 +77,7 @@ img{
 }
 
 .site-nav{
-
+  list-style: none;
 }
 
 .main-cart{
