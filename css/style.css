@@ -1,23 +1,76 @@
+/* Var */
+
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --black-light: #444444;
+  --grey-soc: #E1E1E1;
+  --grey-basic: #EEEEEE;
+  --grey-hover: #DFDFDF;
+  --grey-click: #D5D5D5;
+  --grey-border: #DBDBDB;
+  --arrow: #A6A6A6;
+  --arrow-activ: #231F20;
+  --text-all: #283136;
+  --red: #FB565A;
+  --red-hover-err: #E74246;
+  --red-click: #D7373B;
+  --green: #00CA74;
+  --green-hover: #00BC6C;
+  --green-click: #00AA62;
+  --yellow: #EFC849;
+  --yellow-hover: #EAB534;
+  --yellow-click: #E5A722;
+  --address-text: #666666;
+  --radio-check-icon: #4D4D4D;
+  --input: #D7DCDE;
+  --input-hover: #B4B9BB;
+
+
+}
 
 /* Global */
 
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* Body */
 .page{
 
 }
 
 .page-body{
-  font-family: 'Roboto', sans-serif; 
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial,sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-all);
+  background-color: var(--white);
+  
 }
 
+.container{
+
+}
 /* Header */
 
 .main-header{
-
+  background-color: var(--grey-basic);
 }
 
 .main-header-logo{
 
 }
+
+/* Main nav */
 
 .main-nav{
 
@@ -27,19 +80,12 @@
 
 }
 
-.main-nav-item{
-
-}
-
 .main-cart{
 
 }
 
 /* Main */
 
-.container{
-
-}
 
 .button{
   
