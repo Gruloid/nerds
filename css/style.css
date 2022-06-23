@@ -182,15 +182,15 @@ img {
   background-color: var(--green-click);
 }
 
-.button-web {
+.button-web-red {
   background-color: var(--red);
 }
 
-.button-web:hover {
+.button-web-red:hover {
   background-color: var(--red-hover-err);
 }
 
-.button-web:active {
+.button-web-red:active {
   background-color: var(--red-click);
 }
 
@@ -320,3 +320,5 @@ line-height: 100%;
 .sale-text{
   line-height: 138%;
 }
+
+/* Catalog */
