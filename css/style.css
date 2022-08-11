@@ -59,8 +59,9 @@ img {
 
 .page-body {
   min-width: 1440px;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -70,7 +71,10 @@ img {
 
 }
 
-.container {}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
 
 /* Header */
 
@@ -322,3 +326,31 @@ line-height: 100%;
 }
 
 /* Catalog */
+
+
+.filter-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  text-transform: uppercase; 
+}
+
+.button-cat {
+  color: var(--black);
+  border-color: ;
+  background-color: var(--grey-basic);
+}
+
+.cat-page-active {
+  border: 3px solid var(--grey-border);
+  color: var(--black);
+  background-color: var(--grey-basic);
+}
+
+.sample-list {
+  list-style: none;
+}
+
+.cat-pagination {
+  list-style: none;
+}

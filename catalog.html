@@ -34,7 +34,7 @@
         </li>
       </ul>
       <div class="user-nav">
-        <img src="img/cart-icon.svg" width="15" height="15">
+        <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
         <a class="cart-link" href="blank.html">Корзина</a>
       </div>
     </nav>
@@ -45,16 +45,16 @@
  
   <main>
     <section>
-      <h2>Фильтр по каталогу</h2>
+      <h2 class="visually-hidden">Фильтр по каталогу</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-          <legend>Стоимость:</legend>
+          <legend class="filter-title">Стоимость:</legend>
           <input type="range">
           <label>от<input type="text" name="from" value="0"></label>
           <label>до<input type="text" name="before" value="150 000"></label>
         </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
+          <legend class="filter-title">Сетка:</legend>
           <ul>
             <li>
               <input type="radio" name="view-grid" value="adaptive" id="filter-adaptive" checked>
@@ -71,7 +71,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности:</legend>
+          <legend class="filter-title">Особенности:</legend>
           <ul>
             <li>
               <input type="checkbox" name="slider" id="filter-slider" checked>
@@ -95,7 +95,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button button-cat" type="submit">Показать</button>
       </form>
     </section>
     <section>
@@ -109,7 +109,7 @@
       </div>
       <div>
         <h2>Список шаблонов</h2>
-        <ul>
+        <ul class="sample-list">
           <li>
             <h3><a>Sedona</a></h3>
             <p>Информационный сайт<br> для туристов</p>
@@ -155,12 +155,12 @@
         </ul>
       </div>
       <div>
-        <ul>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
+        <ul class="cat-pagination">
+          <li><a class="button cat-page-active">1</a></li>
+          <li><a class="button button-cat" href="#">2</a></li>
+          <li><a class="button button-cat" href="#">3</a></li>
         </ul>
-        <button type="button">Следующая</button>
+        <a class="button button-cat" href="#">Следующая</a>
 
       </div>
     </section>
@@ -181,13 +181,13 @@
       <h2>Давайте дружить!</h2>
       <ul class="social-list">
         <li>
-          <a class="social-button" href="#"><img src="img/logo/vk.svg" width="26" height="15"></a>
+          <a class="social-button" href="#"><img src="img/logo/vk.svg" width="26" height="15" alt="VK"></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/logo/fb.svg" width="12" height="22"></a>
+          <a class="social-button" href="#"><img src="img/logo/fb.svg" width="12" height="22" alt="FB"></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/logo/insta.svg" width="21" height="21"></a>
+          <a class="social-button" href="#"><img src="img/logo/insta.svg" width="21" height="21" alt="Insta"></a>
         </li>
       </ul>
       <div >
