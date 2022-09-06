@@ -179,7 +179,8 @@ border-image: url("../img/cart-icon.svg");
 
 .services {
 margin-top: 80px;
-height: 429px;
+/* margin-bottom: 39px; */
+/* height: 347px; */
 border-bottom: 2px solid var();
 }
 .services .container {
@@ -241,7 +242,17 @@ border-bottom: 2px solid var();
 
 /* About Us */
 
-.about_us {}
+.about_us {
+margin-top: 39px;
+}
+.about-wrapper {
+display: grid;
+grid-template-columns: 1fr 360px;
+}
+
+.about-text {
+
+}
 
 .subtitle-about {
   font-weight: 500;
@@ -266,6 +277,11 @@ border-bottom: 2px solid var();
   text-transform: uppercase;
 }
 
+.accuracy-list {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3,auto);
+  grid-auto-flow: column;
+}
 .accuracy-list dt {
   font-weight: 700;
 font-size: 45px;
@@ -274,6 +290,7 @@ line-height: 142%;
 
 .accuracy-list dd {
   line-height: 112%;
+  margin-left: 0px;
 }
 
 .accuracy-list span{
@@ -286,8 +303,18 @@ line-height: 154%;
 
 .clients {}
 
+.clients .container {
+border-top: 2px solid var(--grey-basic);
+border-bottom: 2px solid var(--grey-basic);
+}
+.clients-wrapper {
+}
 .clients-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .client-item {
