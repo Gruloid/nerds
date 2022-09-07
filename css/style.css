@@ -77,6 +77,9 @@ img {
   margin: 0 auto;
 }
 
+.active-page {
+}
+
 /* Header */
 .main-header {
   background-color: var(--grey-basic);
@@ -404,7 +407,18 @@ line-height: 100%;
 
 /* Catalog */
 
+.title-catalog {
+text-align: center;
+padding-top: 70px;
+padding-bottom: 108px;
 
+}
+.title-catalog h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  margin: 0px;
+}
 .filter-title {
   font-weight: 700;
   font-size: 18px;
@@ -412,22 +426,22 @@ line-height: 100%;
   text-transform: uppercase; 
 }
 
-.button-cat {
+.button-pag {
   color: var(--black);
 
   background-color: var(--grey-basic);
 }
 
-.cat-page-active {
+.pag-active {
   border: 3px solid var(--grey-border);
   color: var(--black);
   background-color: var(--grey-basic);
 }
 
-.sample-list {
+.products-list {
   list-style: none;
 }
 
-.cat-pagination {
+.pagination-list {
   list-style: none;
 }
