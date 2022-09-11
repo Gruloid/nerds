@@ -394,14 +394,25 @@ margin-bottom: 37px;
 
 .clients-list {
   list-style: none;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-around;
+  align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
 .client-item {
   opacity: 0.2;
+
+}
+
+.client-item a::after {
+  content: "";
+  padding-right: 45px;
+border-right: 2px solid black;
 }
 
 .client-item:hover {
