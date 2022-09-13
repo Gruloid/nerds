@@ -451,7 +451,9 @@ margin-bottom: 37px;
 
 /* Clients */
 
-.clients {}
+.clients {
+margin-bottom: 80px;
+}
 
 .clients .container {
   border-top: 2px solid var(--grey-basic);
@@ -504,6 +506,7 @@ margin-bottom: 37px;
   background: url("../img/map.png") no-repeat;
   background-position: center;
 }
+
 
 .footer-contacts {
   background-color: var(--white);
