@@ -14,7 +14,6 @@
 </head>
 
 <body class="page-body">
-<!-- добавить цвет фона под картиннками и фото -->
   <header class="main-header">
     <div class="container">
       <nav class="main-nav">
@@ -49,14 +48,41 @@
       псевдоэлементом к text-slider -->
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
-        <div class="slider-wrapper">
-          <div class="text-slider">
-            <div class="subtitle-slider"> Долго, дорого, скрупулезно.</div>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button button-slider" href="#">Узнать больше</a>
-          </div>
-          <img src="img/slider/smartphons.png" width="760" height="431" alt="Картинка для слайдера">
-        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <div class="slider-wrapper">
+              <div class="text-slider">
+                <div class="subtitle-slider">Долго, дорого, скрупулезно.</div>
+                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button button-slider button-red" href="#">Узнать больше</a>
+              </div>
+              <img class="img-slider" src="img/slider/smartphons.png" width="760" height="431"
+                alt="Картинка для слайдера">
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-wrapper">
+              <div class="text-slider">
+                <div class="subtitle-slider">Любим математику как никто другой</div>
+                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <a class="button button-slider button-red" href="#">Узнать больше</a>
+              </div>
+              <img class="img-slider" src="img/slider/monitors.png" width="760" height="431"
+                alt="Картинка для слайдера">
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-wrapper">
+              <div class="text-slider">
+                <div class="subtitle-slider">Только ночь, только хардкор</div>
+                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a class="button button-slider button-red" href="#">Узнать больше</a>
+              </div>
+              <img class="img-slider" src="img/slider/smartphone and tablet.png" width="760" height="431"
+                alt="Картинка для слайдера">
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -70,19 +96,19 @@
             <img src="img/laptop.png" width="300" height="146" alt="ноутбук">
             <h3>веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button button-web-red" href="#">Заказать</a>
+            <a class="button button-red" href="#">Заказать</a>
           </li>
           <li class="service-item">
             <img src="img/phone.png" width="300" height="146" alt="смартфон">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button button-app" href="#">Заказать</a>
+            <a class="button button-green" href="#">Заказать</a>
           </li>
           <li class="service-item">
             <img src="img/presentation.png" width="300" height="146" alt="презентация">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-presentation" href="#">Заказать</a>
+            <a class="button button-yellow" href="#">Заказать</a>
           </li>
         </ul>
       </div>
@@ -99,7 +125,6 @@
               покладая рук, как роботы.</p>
             <span>Выполняем заказы на разработку:</span>
             <ul class="features-list">
-              <!-- раскидать три строчки. одна приж -->
               <li class="features-item">Веб-сайтов любой сложности</li>
               <li class="features-item">Мобильных приложений для iOS и Android</li>
               <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
@@ -122,9 +147,9 @@
     </section>
 
     <section class="clients">
-      <h2 class="visually-hidden">Наши Клиенты</h2>    
+      <h2 class="visually-hidden">Наши Клиенты</h2>
       <div class="container">
-     <div class="clients-wrapper">
+        <div class="clients-wrapper">
           <ul class="clients-list">
             <li class="client-item">
               <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -147,7 +172,7 @@
               </a>
             </li>
           </ul>
-       </div>
+        </div>
       </div>
     </section>
 
@@ -169,7 +194,7 @@
     <section class="footer-social">
       <h2 class="visually-hidden">Давайте дружить</h2>
       <div class="container">
-<div class="social-wrapper">
+        <div class="social-wrapper">
           <ul class="social-list">
             <li>
               <a class="social-button" href="#"><img src="img/logo/vk.svg" width="26" height="15" alt="VK"></a>
@@ -185,7 +210,7 @@
             <p class="sale-title">Давайте дружить, это выгодно!</p>
             <p class="sale-text">Скидка 10% для друзей из социальных сетей.</p>
           </div>
-</div>
+        </div>
       </div>
     </section>
   </footer>
