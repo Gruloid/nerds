@@ -605,8 +605,10 @@ margin-top: 0px;
 
 /* Catalog */
 .page-catalog {
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: 260px 1fr;
+  column-gap: 140px;
 }
 
 .catalog-wrapper {
@@ -614,7 +616,7 @@ margin-top: 0px;
 }
 
 .catalog {
-  margin-left: 140px;
+
 }
 
 .title-catalog {
@@ -639,26 +641,55 @@ margin-top: 55px;
   font-size: 18px;
   line-height: 167%;
   text-transform: uppercase;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
-/* .filter-title:first-child {
 
-margin-bottom: 40px;
-} */
+ .filter-price .filter-title {
+
+margin-bottom: 48px;
+ }
+
+.filter {
+width: 260px;
+}
 .filter-price {
-display: block;}
+display: block;
+margin-bottom: 54px;}
+
 .price-grid {
   width: 260px;
   display: grid;
   grid-template-columns: 130px 130px;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 80px auto;
+  row-gap: 14px;
+ 
 }
 .price-range {
   grid-column: 1/-1;
+  background-color: var(--grey-basic);
+}
+.price-range input[type="range"] {
+margin: 30px 22px;
+width: 205px;
+}
+
+.input-price input[type="text"] {
+  width: 80px;
+  height: 38px;
+  /* margin-left: 12px; */
+  background-color: var(--grey-basic);
+  border: 0;
+  
 }
 .price-grid label {
-display: block;}
+/* display: block;
+margin-left: 10px; */
+text-transform: uppercase;
+}
+/* .price-grid label:last-child {
+margin-left: auto;
+} */
 .filter-list {
   font-size: 16px;
   line-height: 20px;
@@ -666,14 +697,24 @@ display: block;}
   padding: 0px;
   margin: 0px;
 }
-
+.filter-list li {
+  margin-bottom: 15px;
+}
+.filter-list li:last-child {
+margin-bottom: 0px;
+}
 .filter fieldset {
   padding: 0px;
-  margin: 0px;
-
+  /* margin: 0px; */
   border: none;
 }
+.filter-cat-g {
+margin-bottom: 43px;
+}
 
+.filter-cat-p {
+margin-bottom: 48px;
+}
 .button-filter {
 width: 260px;
 border: 0px;}
@@ -718,6 +759,10 @@ border: 0px;}
   opacity: 1;
 }
 
+.sort-catalog {
+margin-bottom: 54px;
+}
+
 .button-pag {
   padding: 17px 20px 15px;
   color: var(--black);
@@ -726,6 +771,7 @@ border: 0px;}
 
 .pagination-list {
   padding: 0px;
+  margin: 0px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -751,6 +797,7 @@ border: 0px;}
 
   list-style: none;
   padding: 0px;
+  margin: 0px;
   display: grid;
   grid-template-columns: 360px 360px;
   column-gap: 40px;
@@ -774,7 +821,7 @@ border: 0px;}
 
 .product-discription-img {
   width: 359px;
-  height: 578px;
+  height: 578cd px;
 }
 
 .product-discription h3 {
