@@ -43,9 +43,8 @@
 
   <main>
     <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
-    <section class="main-slider">
-      <!-- сделать картинку слайдера фоном, а не вставкой черз тег img... или попробовать сделать ее 
-      псевдоэлементом к text-slider -->
+    <!-- <section class="main-slider">
+    
       <h2 class="visually-hidden">Преимущества</h2>
       <div class="container">
         <ul class="slider-list">
@@ -84,8 +83,34 @@
           </li>
         </ul>
       </div>
+    </section> -->
+    <section class="slider">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <div class="container">
+        <ul class="slider-list">
+          <li class="slider-item slide-1 slide-current">
+            <h3>Долго, дорого, скрупулезно.</h3>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button button-slider button-red" href="#"> Узнать больше</a>
+          </li>
+          <li class="slider-item slide-2">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button button-slider button-red" href="#"> Узнать больше</a>
+          </li>
+          <li class="slider-item slide-3">
+            <h3>Только ночь, только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button button-slider button-red" href="#"> Узнать больше</a>
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="current-btn" type="button" aria-label="Первый слайд"></button>
+          <button type="button" aria-label="Второй слайд"></button>
+          <button type="button" aria-label="Третий слайд"></button>
+        </div>
+      </div>
     </section>
-
 
     <section class="services">
       <!-- доделать перенос текста во флексе с описанием услуги -->
@@ -192,7 +217,6 @@
           </div>
         </div>
       </div>
-      <!-- <img src="img/map.png" width="1440" height="416" alt="Карта"> -->
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Давайте дружить</h2>

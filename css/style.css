@@ -78,7 +78,7 @@ img {
 /* Header */
 .main-header {
   background-color: var(--grey-basic);
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
 }
 
 .main-header .container {
@@ -91,7 +91,10 @@ img {
   height: 65px;
 }
 
-.active-page {}
+.active-page {
+  padding-bottom: 15px;
+border-bottom: 2px solid var(--red);
+}
 
 /* Main nav */
 
@@ -119,7 +122,12 @@ img {
 
 .site-nav a,
 .user-nav a {
+  font-weight: 500;
+font-size: 16px;
+line-height: 30px;
   display: block;
+  padding-top: 20px;
+  padding-bottom: 15px;
   color: var(--black);
 }
 
@@ -145,7 +153,7 @@ img {
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 7px;
+  bottom: 22px;
   left: 0px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -167,7 +175,7 @@ img {
 
 
 /* Slider */
-
+/* 
 .main-slider {
   background-color: var(--grey-basic);
   margin-top: -55px;
@@ -214,9 +222,86 @@ img {
 .img-slider {
   width: 760px;
   height: 431px;
+} */
+.slider {
+  margin-bottom: 80px;
+  position: relative;
+  background-color: var(--grey-basic);
 }
 
+.slider-list {
+  padding: 0px;
+  margin: 0;
+  list-style: none;
+}
+
+.slider-item {
+  height: 431px;
+  display: none;
+}
+
+.slider-item h3 {
+  width: 538px;
+  margin: 0px;
+  padding-top: 78px;
+  font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+}
+
+.slider-item p {
+  display: block;
+  margin-top: 37px;
+  margin-bottom: auto;
+  width: 416px;
+}
+
+.slide-1 {
+  background-image: url("../img/slider/smartphons.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slide-2 {
+  background-image: url("../img/slider/monitors.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.slide-3 {
+  background-image: url("../img/slider/smartphone_tablet.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.slide-current {
+display:list-item ;
+}
+
+.button-slider {
+  min-width: 240px;
+  margin-top: 26px;
+}
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 96px;
+}
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider-controls .current-btn{
+background-image: url("../img/current-btn.svg");
+background-repeat: no-repeat;
+background-position: center;
+}
 /* Services */
+
 
 .services {
   margin-bottom: 39px;
