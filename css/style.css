@@ -664,6 +664,7 @@ address p {
 
 .social-button:active {
   background-color: var(--red-click);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .social-button:active img {
