@@ -88,14 +88,6 @@ img {
 
 }
 
-/* .main-header-logo {
-  width: 160px;
-  height: 65px;
-} */
-/* 
-.main-header-logo:hover + * .header-logo {
-fill: red;
-} */
 
 .active-page {
   padding-bottom: 15px;
@@ -404,13 +396,6 @@ background-position: 0 0;
   column-gap: 149px;
 }
 
-/* .about-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-
-} */
-
 .about-text p {
   margin-top: 32px;
   margin-bottom: 40px;
@@ -428,8 +413,6 @@ background-position: 0 0;
   line-height: 100%;
   margin-top: 43px;
 }
-
-
 
 .features-list {
   height: 120px;
@@ -472,7 +455,6 @@ background-position: 0 0;
   align-self: center;
 
 }
-
 
 .accuracy-img {
   width: 360px;
@@ -883,6 +865,18 @@ background-image: url("../img/checkbox-on.svg");
   border: 0px;
 }
 
+.btn-gray {
+color: var(--black);
+}
+
+.btn-gray:hover,
+.btn-gray:focus {
+background-color: var(--grey-hover);
+}
+.btn-gray:active {
+background-color: var(--grey-click);
+box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
 .sort-title {
 
   display: grid;
@@ -915,14 +909,39 @@ background-image: url("../img/checkbox-on.svg");
 .sort-link {
   color: var(--black);
   opacity: 0.3;
-  padding-right: 25px;
+  margin-right: 25px;
+}
+.sort-link:hover,
+.sort-link:focus {
+opacity: 0.6;
 }
 
-
-.sort-active {
+.sort-active,
+.sort-link:active {
   opacity: 1;
 }
 
+.arrow-active svg path,
+.sort-directional-down:active svg path,
+.sort-directional-up:active svg path {
+opacity: 1;
+fill: var(--arrow-activ);
+}
+.sort-directional-down {
+margin-left: 22px;
+
+}
+.sort-directional-up{
+margin-left: 18px;
+
+}
+.sort-directional-up:hover svg path,
+.sort-directional-up:focus svg path,
+.sort-directional-down:hover svg path,
+.sort-directional-down:focus svg path{
+fill: var(--arrow);
+opacity: 1;
+}
 .sort-catalog {
   margin-top: 48px;
   margin-bottom: 54px;
