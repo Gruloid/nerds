@@ -49,12 +49,32 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр по каталогу</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter-price">
+        <!-- <fieldset class="filter-price">
           <legend class="filter-title">Стоимость:</legend>
           <div class="price-grid">
             <div class="price-range"><input type="range"></div>
             <label class="input-price">от<input type="text" name="from" value="0"></label>
             <label class="input-price">до<input type="text" name="before" value="150 000"></label>
+          </div>
+        </fieldset> -->
+        <fieldset class="filter-range">
+          <legend class="filter-title">Стоимость:</legend>
+          <div class="range">
+            <div class="range-controls">
+              <div class="scale">
+               <div class="bar"></div>    <!--style="width: 60%; margin-left: 10%" для управления js -->
+              </div>
+              <div class="toggle toogle-min" tabindex="0"></div> <!-- style="left: 20%"--->
+              <div class="toggle toogle-max" tabindex="0"></div> <!-- style="left: 60%"--->
+            </div> 
+            <div class="price-controls">
+             <label>
+              от <input type="text" name="min-price" value="0">
+             </label>
+             <label>
+              до <input type="text" name="max-price" value="150000">
+             </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="filter-cat-g">
