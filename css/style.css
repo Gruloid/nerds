@@ -974,6 +974,9 @@ background-image: url("../img/checkbox-on.svg");
   width: 359px;
   height: 578cd px;
 }
+.products-item:hover .product-discription-img {
+  box-shadow:  0px 6px 15px rgba(0, 0, 0, 0.25);
+}
 
 .product-discription h3 {
   font-weight: 700;
@@ -999,14 +1002,8 @@ background-image: url("../img/checkbox-on.svg");
 .browser-img {
 widows: 360px;
 height: 40px;
-opacity: 0.13;
+opacity: 0.12;
 background-image: url("../img/browser.svg");
 background-repeat: no-repeat;
 background-position: 0 0;
 }
-/* .products-item h3,
-.products-item p {
-display: block;
-  margin: 0px;
-  padding: 0px;
-} */
