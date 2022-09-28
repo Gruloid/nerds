@@ -82,7 +82,15 @@ img {
   background-color: var(--grey-basic);
 
 }
-
+.main-header-logo:hover,
+.main-heade-logor:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.main-header-logo:active {
+opacity: 0.3;
+cursor: pointer;
+}
 .main-header .container {
   margin-top: 49px;
 
@@ -674,6 +682,7 @@ address p {
 /* Modal */
 
 .modal {
+  display: none;
   position: fixed;
   z-index: 3;
   width: 960px;
@@ -697,69 +706,69 @@ address p {
   margin: 0;
   margin-bottom: 37px;
 }
+
 .write-mail {
 
-display: grid;
-grid-template-columns: 1fr 1fr;
-/* justify-content: space-between; */
-column-gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
 }
 
-.write-mail label {
+.write-mail label
+ {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   margin-bottom: 9px;
-  
+
 }
 
-.modal-name p{
-margin: 0;
-}
-.modal-name input,
-.modal-email input {
-width: 360px;
-height: 50px;
-border: 2px solid var(--input);
-border-radius: 3px;
-padding: 16px;
-box-sizing: border-box;
-}
-
-.modal-email p {
+.write-mail p {
   margin: 0;
 }
 
-.modal-message {
+.modal-name input,
+.modal-email input {
+  width: 360px;
+  height: 50px;
+  border: 2px solid var(--input);
+  border-radius: 3px;
+  padding: 16px;
+  box-sizing: border-box;
+}
 
-grid-column: 1 / -1;}
+
+.modal-message {
+margin-top: 34px;
+  grid-column: 1 / -1;
+}
+
 .modal-message textarea {
-width: 760px;
-height: 118px;
-border: 2px solid var(--input);
-border-radius: 3px;
-padding: 16px;
-box-sizing: border-box;
+  width: 760px;
+  height: 118px;
+  border: 2px solid var(--input);
+  border-radius: 3px;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .modal-close {
-position: absolute;
-top: 78px;
-right: 90px;
-width: 21px;
-height: 21px;
-background-color: transparent;
-background-image: url("../img/modal-close.svg");
-background-position: 0 0;
-background-repeat: no-repeat;
-border: none
-;
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  background-image: url("../img/modal-close.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  border: none;
 }
 
 .button-modal {
-width: 259px;
-border: none;
-margin-top: 47px;
+  width: 259px;
+  border: none;
+  margin-top: 47px;
 }
 
 /* Catalog */
