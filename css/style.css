@@ -123,6 +123,7 @@ cursor: pointer;
 
 .site-nav li {
   margin-right: 45px;
+  margin-bottom: 7px;
 }
 
 .site-nav a,
@@ -132,7 +133,7 @@ cursor: pointer;
   line-height: 30px;
   display: block;
   padding-top: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
   color: var(--black);
 }
 
@@ -159,6 +160,7 @@ cursor: pointer;
 .cart-link {
   position: relative;
   padding-left: 40px;
+  margin-bottom: 7px;
 }
 
 .cart-link::before {
@@ -166,7 +168,7 @@ cursor: pointer;
   position: absolute;
   width: 15px;
   height: 15px;
-  bottom: 22px;
+  bottom: 15px;
   left: 0px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
@@ -252,14 +254,15 @@ cursor: pointer;
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  bottom: 96px;
+  left: 677px;
+  bottom: 92px;
 }
 
 .slider-controls button {
   padding: 0;
   width: 18px;
   height: 18px;
+  margin-right: 13px;
   background-color: var(--white);
   border: 2px solid var(--white);
   border-radius: 50%;
@@ -428,7 +431,6 @@ cursor: pointer;
 }
 
 .features-list {
-  height: 120px;
   padding: 0px;
   margin-top: 23px;
   margin-bottom: 0px;
@@ -441,6 +443,7 @@ cursor: pointer;
 .features-item {
   position: relative;
   padding-left: 36px;
+  margin-bottom: 20px;
 }
 
 .features-item::before {
@@ -652,6 +655,7 @@ address p {
   height: 81px;
   background-color: var(--grey-soc);
   border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 .social-button:hover {
@@ -742,7 +746,11 @@ padding-left: 13px;
   padding: 14px;
   box-sizing: border-box;
 }
-
+.modal-name input:hover,
+.modal-email input:hover,
+.modal-message textarea:hover {
+border-color: var(--input-hover);
+}
 .modal-message {
 margin-top: 34px;
   grid-column: 1 / -1;
@@ -755,6 +763,7 @@ margin-top: 34px;
   border-radius: 3px;
   padding: 14px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .modal-close {
@@ -765,11 +774,19 @@ margin-top: 34px;
   height: 21px;
   background-color: transparent;
   background-image: url("../img/modal-close.svg");
+  opacity: 0.3;
   background-position: 0 0;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
-
+.modal-close:hover,
+.modal-close:focus {
+opacity: 1;
+}
+.modal-close:active {
+opacity: 0.1;
+}
 .button-modal {
   width: 259px;
   border: none;
@@ -914,7 +931,7 @@ margin-top: 34px;
 
 .filter-option {
   padding-left: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .filter-option label {
@@ -941,6 +958,8 @@ margin-top: 34px;
   top: 0px;
   left: -36px;
   background-image: url("../img/radio-off.svg");
+  opacity: 0.4;
+
 }
 
 .filter-input-radio:checked+label::before {
@@ -951,6 +970,8 @@ margin-top: 34px;
   top: 0px;
   left: -36px;
   background-image: url("../img/radio-on.svg");
+  opacity: 0.4;
+
 }
 
 .filter-input-checkbox+label::before {
@@ -961,6 +982,8 @@ margin-top: 34px;
   top: 0px;
   left: -36px;
   background-image: url("../img/checkbox-off.svg");
+  opacity: 0.4;
+
 }
 
 .filter-input-checkbox:checked+label::before {
@@ -971,10 +994,25 @@ margin-top: 34px;
   top: 0px;
   left: -36px;
   background-image: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+}
+.filter-input-radio+label:hover::before,
+.filter-input-radio:checked+label:hover::before,
+.filter-input-checkbox+label:hover::before,
+.filter-input-checkbox:checked+label:hover::before,
+.filter-input-radio+label:focus::before,
+.filter-input-radio:checked+label:focus::before,
+.filter-input-checkbox+label:focus::before,
+.filter-input-checkbox:checked+label:focus::before {
+opacity: 1;
 }
 
+.filter-input-radio:disabled+label::before,
+.filter-input-checkbox+label:disabled::before {
+opacity: 0.1;
+}
 .filter-cat-g {
-  margin-bottom: 43px;
+  margin-bottom: 48px;
 }
 
 .filter-cat-p {
@@ -1097,6 +1135,7 @@ margin-top: 34px;
 
 .pagination-list li {
   margin-right: 11px;
+  margin-bottom: 2px;
 }
 
 .pag-active {
@@ -1130,9 +1169,7 @@ margin-top: 34px;
   position: absolute;
   bottom: 0px;
   text-align: center;
-  height: 231px;
   opacity: 0;
-  /* order: 3; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1140,7 +1177,7 @@ margin-top: 34px;
 
 .product-discription-img {
   width: 359px;
-  height: 578cd px;
+  height: 578px;
 }
 
 .products-item:hover .product-discription-img {
