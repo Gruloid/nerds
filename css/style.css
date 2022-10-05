@@ -97,8 +97,13 @@ cursor: pointer;
 }
 
 
-.active-page {
-  border-bottom: 2px solid var(--red);
+.active-page::before {
+  position: absolute;
+  content: "";
+  width: 73px;
+  height: 2px;
+  bottom: 4px;
+  background-color: var(--red);
 }
 
 /* Main nav */
@@ -114,6 +119,7 @@ cursor: pointer;
 }
 
 .site-nav {
+  position: relative;
   list-style: none;
   padding: 0px;
   margin: 0px auto;
@@ -251,10 +257,12 @@ cursor: pointer;
   min-width: 240px;
   margin-top: 26px;
 }
-
+.slider-wrap {
+position: relative;
+}
 .slider-controls {
   position: absolute;
-  left: 677px;
+  left: 540px;
   bottom: 92px;
 }
 
@@ -453,8 +461,7 @@ cursor: pointer;
   height: 2px;
   top: 10px;
   left: 0px;
-  background-image: url("../img/red-line.svg");
-  background-repeat: no-repeat;
+  background-color: var(--red);
   background-position: 0 0;
 }
 
@@ -942,6 +949,9 @@ opacity: 0.1;
   padding: 0px;
   margin: 0px;
   margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 
@@ -951,7 +961,7 @@ opacity: 0.1;
 
 .filter-option {
   padding-left: 36px;
-  margin-bottom: 13px;
+
 }
 
 .filter-option label {
@@ -962,13 +972,16 @@ opacity: 0.1;
 
 }
 
-.filter-option.filter-radio label {
-  padding-top: 5px;
-}
-
+.filter-option.filter-radio label,
 .filter-option.filter-checkbox label {
   padding-top: 3px;
 }
+.filter-input:focus + label::before {
+
+  outline: 10px auto -webkit-focus-ring-color;
+  
+}
+
 
 .filter-input-radio+label::before {
   content: "";
@@ -1198,6 +1211,7 @@ opacity: 0.1;
 .product-discription-img {
   width: 359px;
   height: 578px;
+  object-fit: contain;
 }
 
 .products-item:hover .product-discription-img {
