@@ -765,7 +765,10 @@ margin-top: 34px;
   box-sizing: border-box;
   resize: none;
 }
-
+.modal-show{
+display: block;
+animation: bounce 0.6s;
+}
 .modal-close {
   position: absolute;
   top: 78px;
@@ -793,6 +796,23 @@ opacity: 0.1;
   margin-top: 38px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Catalog */
 .page-catalog {
   margin-top: 55px;
